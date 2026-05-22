@@ -117,3 +117,18 @@ modelEl.addEventListener("change", e=>{
     truckImage.src = truckImages[e.target.value];
     partImage.src = "placeholder.png";
 });
+
+function login(){
+let user = document.getElementById("user").value;
+let pass = document.getElementById("pass").value;
+
+/* simple check */
+if(user === "admin" && pass === "1234"){
+    
+    // 👉 THIS LINE WAS MISSING
+    window.location.href = "index.html";
+
+}else{
+    alert("Wrong credentials");
+}
+}
